@@ -1,0 +1,16 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Questão11 {
+
+	public static void main(String[] args) {
+		Scanner km = new Scanner(System.in);
+		System.out.println("Digite um valor em m/s: ");
+		double m = km.nextDouble();
+		double k = m*3.6;
+		System.out.println("O valor é: "+k);
+
+	}
+
+}
