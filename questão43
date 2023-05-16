@@ -1,0 +1,31 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Questão43 {
+
+	public static void main(String[] args) {
+		Scanner vendedores= new Scanner(System.in);
+		System.out.println("Digite o seu valor: ");
+		int desconto = vendedores.nextInt();
+		double desconto1 = desconto-(desconto * 0.10);
+		System.out.println("O desconto de 10% será: "+desconto1);
+		
+		System.out.println("Digite o seu valor pra parcelar: ");
+		int parcela = vendedores.nextInt();
+		double parcela1 = parcela / 3;
+		System.out.println("Cada parcela custará: "+parcela1);
+		
+		System.out.println("Digite o seu valor: ");
+		int comissao = vendedores.nextInt();
+		double comissao1 = comissao * 0.05;
+		System.out.println("a comissao do vendedor, no caso da venda ser a vista (5% sobre o valor com desconto), será de: "+comissao1);
+		
+		System.out.println("Digite o seu valor: ");
+		int desconto2 = vendedores.nextInt();
+		double comissao2 = desconto2 * 0.05;
+		System.out.println("a comissao do vendedor, no caso da venda ser parcelada (5% sobre o valor total), será de: "+comissao2);
+
+	}
+
+}
